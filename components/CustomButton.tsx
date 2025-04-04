@@ -3,13 +3,16 @@ import { Text, TouchableOpacity } from "react-native";
 
 interface props{
     title: string
-    
+    func : ()=> {
+        pix : string
+        
+    }
 }
 
-export default function CustomButton({title}: props){ //Desconstrução de um objeto
+export default function CustomButton({func}: props){ //Desconstrução de um objeto
     return(
         <TouchableOpacity>
-            <Text>{title} </Text>
+            <Text>{func().pix} </Text>
         </TouchableOpacity>
     );
 }

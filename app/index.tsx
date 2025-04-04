@@ -1,6 +1,6 @@
 import CustomButton from "@/components/CustomButton";
 import React,{ useState }  from "react"; 
-import { Button, Text,View } from "react-native";
+import { Button, Text,View, } from "react-native";
 
 export default function HomeScreen(){
 
@@ -18,7 +18,7 @@ export default function HomeScreen(){
             <Button 
             title="Reiniciar" 
             onPress={() => {setCount(count - count)}}/>
-            <CustomButton title="Teste"/>
+            <CustomButton func().pix="Teste"/>
         </View>
       
     );
