@@ -9,10 +9,10 @@ interface props{
     }
 }
 
-export default function CustomButton({func}: props){ //Desconstrução de um objeto
+export default function CustomButton({title,func}: props){ //Desconstrução de um objeto
     return(
         <TouchableOpacity>
             <Text>{func().pix} </Text>
         </TouchableOpacity>
     );
-}
+};
