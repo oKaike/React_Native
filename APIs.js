@@ -17,13 +17,13 @@ fetch(`${host}/characters`, {
         console.log(characters[i].toUpperCase());
         i++;
     }
-    let j = 2;
+   
      
-   ids = data.characters.id[j];
-   console.log( data.characters.id[j]);
-   for(j; j < ids.length; j++){
-    
-    
+   
+   let j = 0;
+   for(j; j < characters[j].length; j++){
+    ids = data.characters[j].id;
+    console.log(ids);
    }
 }).catch((error) => {
     console.log(error);
