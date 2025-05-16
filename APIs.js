@@ -11,12 +11,12 @@ fetch(`${host}/characters`, {
     characters = data.characters[0].jutsu;
     imagen = data.characters[0].images;
     
-    console.log(imagen[0]);
+    /*console.log(imagen[0]);
     let i = 0;
     while(i < characters[0].length){ 
         console.log(characters[i].toUpperCase());
         i++;
-    }
+    }*/
    
      
    
